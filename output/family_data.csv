@@ -1,0 +1,69 @@
+id,name,parent_id,birth_year,death_year,gender,location,source_part,notes
+root_T,Тимофеев (1800),,1800,,M,,part6,Корень рода. Фамилия Тимофеев. Точное имя неизвестно.
+gen1_Ter,Дымков Терентий,root_T,,,M,,part4,Смена фамилии: Тимофеев → Дымков. Сын Тимофеева (1800).
+gen2_Nik,Дымков Никита Терентьевич,gen1_Ter,,,M,,part6|part7,
+gen2_Mal,Дымков Малах Терентьевич,gen1_Ter,,,M,,part4,
+gen2_Pah,Дымков Пахом Терентьевич,gen1_Ter,1902,1969,M,дер. Каменные Лавы,part2,
+gen2_Dol,Дымков Николай (Доля) Терентьевич,gen1_Ter,,,M,,part5,
+gen2_Vla,Дымков Владимир Терентьевич,gen1_Ter,,,M,,part5,
+gen2_Iva,Дымков Иван Терентьевич,gen1_Ter,,,M,,part3,
+gen2_Alex,Дымков Александр Терентьевич,gen1_Ter,,,M,,part3,
+gen2_Mat,Дымкова Матруна Терентьевна,gen1_Ter,,,F,,part6,Дочь. Вышла замуж за Дымкова Никиту Терентьевича (родственник?).
+gen3_AlNik,Дымков Алексей Никитович,gen2_Nik,,,M,,part7,
+gen3_AlexNik,Дымков Александр Никитович,gen2_Nik,,,M,,part6,
+gen3_MiNik,Дымков Михаил Никитович,gen2_Nik,,,M,,part6,
+gen3_NiNik,Дымков Никола Никитович,gen2_Nik,,,M,,part6,
+gen3_VlNik,Дымков Владимир Никитович,gen2_Nik,,,M,,part6,Отец Вити Владимировича. Имя выведено из отчества детей.
+gen3_MaNik,Мария Никитовна,gen2_Nik,,,F,,part6,Дочь
+gen3_MarNik,Дымков Марк Малахович,gen2_Mal,,,M,,part4,
+gen3_AlMal,Дымков Алёша Малахович,gen2_Mal,,,M,,part4,
+gen3_YaMal,Дымков Яков Малахович,gen2_Mal,,,M,,part4,
+gen3_MoMal,Дымков Мотя Малахович,gen2_Mal,,,M,,part4,
+gen3_SeMal,Дымков Сергей Малахович,gen2_Mal,,,M,,part4,
+gen3_LeMal,Дымков Леонид Малахович,gen2_Mal,,,M,,part4,
+gen3_MaPah,Дымкова Мария (жена Малаха),gen2_Mal,,,F,,part4,Жена Малаха (не Дымкова по рождению)
+gen3_NiPah,Дымков Николай Пахомович,gen2_Pah,,,M,,part2,
+gen3_SePah,Дымков Сергей Пахомович,gen2_Pah,,,M,,part2,
+gen3_AnPah,Дымков Анатолий Пахомович,gen2_Pah,,,M,,part2,
+gen3_MiPah,Дымков Михаил Пахомович,gen2_Pah,1951,,M,Минск,part3,16.10.1951
+gen3_VlPah,Дымков Владимир Пахомович,gen2_Pah,,,M,,part1,
+gen3_NadPah,Дымкова Надежда Пахомовна,gen2_Pah,,,F,,part2,Дочь
+gen3_NiPah2,Дымкова Нина Пахомовна,gen2_Pah,,,F,,part2,Дочь
+gen3_StDol,Дымков Степан Николаевич,gen2_Dol,,,M,,part5,
+gen3_FeDol,Дымков Фёдор Николаевич,gen2_Dol,,,M,,part5,
+gen3_AlDol,Дымков Алексей Николаевич,gen2_Dol,,,M,,part5,
+gen3_VaDol,Дымков Василь Николаевич,gen2_Dol,,,M,,part5,
+gen3_IraDol,Ира? Николаевна,gen2_Dol,,,F,,part5,Дочь. Имя под вопросом.
+gen4_PeAl,Дымков Петя Алексеевич,gen3_AlNik,,,M,,part7,Имя под вопросом (плохо читается)
+gen4_VlAl,Дымков Владимир Алексеевич,gen3_AlNik,,,M,,part6,Алексеевич = сын Алексея Никитовича
+gen4_ShAl,Шура Алексеевна,gen3_AlNik,,,F,,part6,Дочь
+gen4_GaAl,Галина Алексеевна,gen3_AlNik,,,F,,part6,Дочь
+gen4_VaAlex,Дымков Василий Александрович,gen3_AlexNik,,,M,,part6,Александрович = сын Александра Никитовича
+gen4_LuAlex,Людмила Александровна,gen3_AlexNik,,,F,,part6,Дочь
+gen4_VitVl,Дымков Витя Владимирович,gen3_VlNik,,,M,,part6,Владимирович = сын Владимира Никитовича
+gen4_ZiVl,Зина Владимировна,gen3_VlNik,,,F,,part6,Дочь
+gen4_KlVl,Клава,gen3_VlNik,,,F,,part6,Дочь
+gen4_FeVl,Федя,gen3_VlNik,,,M,,part6,Сын (точная фамилия не указана)
+gen4_SeVl,Сергей,gen3_VlNik,,,M,,part6,Сын (точная фамилия не указана)
+gen4_SeSePah,Дымков Сергей Сергеевич,gen3_SePah,,,M,,part2,Сын Сергея Пахомовича
+gen4_SeAnPah,Дымков Сергей Анатольевич,gen3_AnPah,,,M,,part2,
+gen4_IrAnPah,Дымкова Ирина Анатольевна,gen3_AnPah,,,F,,part2,Дочь
+gen4_SeMiPah,Дымков Сергей Михайлович,gen3_MiPah,1978,,M,Минск,part3,07.05.1978
+gen4_ViMiPah,Дымков Виталий Михайлович,gen3_MiPah,1979,,M,Минск,part3,20.12.1979
+gen4_NiMiPah,Дымков Николай Михайлович,gen3_MiPah,,,M,,part3,
+gen4_VaMiPah,Дымков Василий Михайлович,gen3_MiPah,,,M,,part3,Дымков Василь
+gen4_ShuMiPah,Шура,gen3_MiPah,,,F,,part3,Дочь
+gen4_VerMiPah,Вера,gen3_MiPah,,,F,,part3,Дочь
+gen4_NinMiPah,Нина,gen3_MiPah,,,F,,part3,Дочь
+gen4_LidMiPah,Лидия,gen3_MiPah,,,F,,part3,Дочь
+gen4_AlVlPah,Дымков Александр Владимирович,gen3_VlPah,,,M,,part2,Владимирович = сын Владимира Пахомовича
+gen4_GaVlPah,Дымкова Галина Владимировна,gen3_VlPah,,,F,,part1,Дочь
+gen5_VoVitVl,Вова,gen4_VitVl,,,M,,part6,
+gen5_NiVitVl,Николай,gen4_VitVl,,,M,,part6,
+gen5_GaVitVl,Галина,gen4_VitVl,,,F,,part6,Дочь
+gen5_AlSe,Дымков Алексей Сергеевич,gen4_SeMiPah,2006,,M,Минск,part3,31.03.2006
+gen5_EvSe,Дымков Евгений Сергеевич,gen4_SeMiPah,2013,,M,Минск,part3,04.06.2013
+gen5_SoVi,Дымкова София Витальевна,gen4_ViMiPah,2010,,F,Минск,part3,16.02.2010. Дочь.
+gen3_AlNikProk,Дымков Прокофий (Архиерей),gen3_AlNik,,,M,,part7,Сын Алексея? Под вопросом — Архиерей может быть прозвищем.
+gen4_MarProk,Дымкова Марфа Прокофьевна,gen3_AlNikProk,,,F,,part7,Дочь
+gen4_PeklaProk,Дымкова Пекла Прокофьевна,gen3_AlNikProk,,,F,,part7,Дочь
