@@ -8,3 +8,4 @@ original_foto_tree_parts/
 output/ocr_*.txt
 output/raw_ocr.txt
 output/final_sunburst.html
+output/.~lock.*

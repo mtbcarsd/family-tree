@@ -109,6 +109,96 @@ def get_ancestors(df: pd.DataFrame, node_id: str) -> set[str]:
 
 # ── Построение диаграммы ──────────────────────────────────────────────────────
 
+def build_treemap(df: pd.DataFrame, max_depth: int) -> go.Figure:
+    depths    = compute_depths(df)
+    desc_counts = compute_desc_counts(df)
+    has_children = set(df.loc[df["parent_id"] != "", "parent_id"])
+
+    # "has_children" только среди отображаемых узлов (глубина <= max_depth)
+    shown_ids = {row["id"] for _, row in df.iterrows() if depths.get(row["id"], 0) <= max_depth}
+    has_children = {
+        row["parent_id"] for _, row in df.iterrows()
+        if row["id"] in shown_ids and row["parent_id"] in shown_ids
+    }
+
+    ids, labels, parents, values, colors, hover = [], [], [], [], [], []
+
+    for _, row in df.iterrows():
+        nid = row["id"]
+        d = depths.get(nid, 0)
+        if d > max_depth:
+            continue
+
+        dc = desc_counts.get(nid, 0)
+        name = row["name"]
+
+        # Метка в прямоугольнике
+        label_parts = [name]
+        by = row["birth_year"]
+        dy = row["death_year"]
+        if pd.notna(by):
+            yr = f"{int(by)}–{int(dy)}" if pd.notna(dy) else f"р.{int(by)}"
+            label_parts.append(yr)
+        if dc > 0:
+            label_parts.append(f"↓{dc}")
+
+        # Hover
+        h = [f"<b>{name}</b>", f"Поколение: {d}"]
+        if pd.notna(by):
+            h.append(f"Рождение: {int(by)}")
+        if pd.notna(dy):
+            h.append(f"Смерть: {int(dy)}")
+        loc = row.get("location", "")
+        if loc:
+            h.append(f"Место: {loc}")
+        src = row.get("source_part", "")
+        if src:
+            h.append(f"Источник: {src}")
+        notes = row.get("notes", "")
+        if notes:
+            h.append(f"Примечание: {notes}")
+        h.append(f"Потомков: {dc}")
+
+        par = row["parent_id"]
+        if par and depths.get(par, 0) > max_depth:
+            par = ""
+
+        ids.append(nid)
+        labels.append("<br>".join(label_parts))
+        parents.append(par)
+        # Листья = 1, ветви = 0 (размер = сумма потомков-листьев)
+        values.append(1 if nid not in has_children else 0)
+        colors.append(PALETTE[min(d, len(PALETTE) - 1)])
+        hover.append("<br>".join(h))
+
+    if not ids:
+        return go.Figure()
+
+    fig = go.Figure(go.Treemap(
+        ids=ids,
+        labels=labels,
+        parents=parents,
+        values=values,
+        hovertext=hover,
+        hoverinfo="text",
+        marker=dict(
+            colors=colors,
+            line=dict(width=2, color="white"),
+            pad=dict(t=20, l=4, r=4, b=4),
+        ),
+        textfont=dict(size=12, family="Arial"),
+        textposition="middle center",
+        branchvalues="remainder",
+    ))
+    fig.update_layout(
+        margin=dict(t=10, l=0, r=0, b=0),
+        paper_bgcolor="#0f0f1a",
+        font=dict(color="white"),
+        height=720,
+    )
+    return fig
+
+
 def build_sunburst(df: pd.DataFrame, max_depth: int) -> go.Figure:
     depths    = compute_depths(df)
     desc_counts = compute_desc_counts(df)
@@ -224,7 +314,7 @@ def main() -> None:
         gender_mode = st.radio(
             "Линия",
             ["Только мужская (Дымковы)", "Все (включая женщин)"],
-            index=0,
+            index=1,
         )
         male_only = gender_mode.startswith("Только")
 
@@ -339,8 +429,8 @@ def main() -> None:
     st.markdown("---")
 
     # ── Вкладки ───────────────────────────────────────────────────────────────
-    tab_sunburst, tab_table, tab_stats = st.tabs(
-        ["☀️ Sunburst диаграмма", "📋 Таблица", "📊 Статистика"]
+    tab_sunburst, tab_treemap, tab_table, tab_stats = st.tabs(
+        ["☀️ Sunburst диаграмма", "🗺️ Treemap (проверка)", "📋 Таблица", "📊 Статистика"]
     )
 
     with tab_sunburst:
@@ -358,6 +448,64 @@ def main() -> None:
                 file_name="family_tree_filtered.html",
                 mime="text/html",
             )
+
+    with tab_treemap:
+        st.markdown("#### Пошаговая проверка структуры дерева")
+        st.caption(
+            "Управляй глубиной ниже — проверяй поколение за поколением. "
+            "Отображаются только мужчины, если выбран режим «Только мужская линия»."
+        )
+
+        tm_col1, tm_col2 = st.columns([2, 1])
+        with tm_col1:
+            tm_depth = st.slider(
+                "Глубина (поколения от корня)",
+                min_value=0,
+                max_value=max_gen,
+                value=1,
+                key="tm_depth",
+                help="0 = только корень, 1 = корень + его дети, 2 = +внуки, …",
+            )
+        with tm_col2:
+            st.metric("Показано поколений", f"0 → {tm_depth}")
+
+        # Применяем те же фильтры, что и в sidebar, но с собственной глубиной
+        df_tm = df.copy()
+        tm_depths = compute_depths(df_tm)
+        df_tm_filtered = df_tm[df_tm["id"].map(lambda i: tm_depths.get(i, 0)) <= tm_depth]
+
+        if df_tm_filtered.empty:
+            st.warning("Нет данных. Измените фильтры или глубину.")
+        else:
+            fig_tm = build_treemap(df_tm_filtered, tm_depth)
+            st.plotly_chart(fig_tm, use_container_width=True)
+
+        # Таблица текущего поколения для проверки
+        st.markdown(f"---\n**Персоны на уровне {tm_depth}** (только выбранная глубина):")
+        id_to_name = dict(zip(df_all["id"], df_all["name"]))
+        cur_gen_rows = []
+        for _, row in df_all.iterrows():
+            if tm_depths.get(row["id"], -1) == tm_depth:
+                if male_only and row["gender"] != "M":
+                    continue
+                cur_gen_rows.append({
+                    "Имя": row["name"],
+                    "Пол": "М" if row["gender"] == "M" else "Ж",
+                    "Родитель": id_to_name.get(row["parent_id"], "—"),
+                    "Рождение": int(row["birth_year"]) if pd.notna(row["birth_year"]) else "—",
+                    "Место": row.get("location", "") or "—",
+                    "Источник": row.get("source_part", "") or "—",
+                    "Примечание": row.get("notes", "") or "",
+                })
+        if cur_gen_rows:
+            st.dataframe(
+                pd.DataFrame(cur_gen_rows),
+                use_container_width=True,
+                hide_index=True,
+            )
+            st.caption(f"Всего на уровне {tm_depth}: {len(cur_gen_rows)} чел.")
+        else:
+            st.info("На этом уровне нет персон в текущем фильтре.")
 
     with tab_table:
         tbl = build_table(df)
