@@ -445,27 +445,40 @@ def main() -> None:
     with tab_fe:
         if _FE_HTML.exists():
             html_src = _FE_HTML.read_text(encoding="utf-8")
-            # Streamlit скрывает неактивные вкладки через display:none.
-            # При onload iframe-а body не имеет явной высоты, поэтому
-            # height:100% на #treebg раскрывается в 0 и дерево невидимо.
-            # Скрипт ждёт появления реальной ширины (клик по вкладке),
-            # затем задаёт height:100% для html/body и форсирует перерисовку.
-            resize_script = (
+            # FamilyEcho использует height:100% на всей DOM-цепочке до #treebg,
+            # но <body> не имеет явной высоты — цепочка рвётся и дерево невидимо.
+            # Решение: вставляем CSS с height:100vh (не зависит от родителей)
+            # и вызываем EPR() в несколько заходов после загрузки страницы.
+            css_fix = (
+                "<style>"
+                "html,body,#main,#treediv,#treemargin,#treebg"
+                "{height:100vh!important}"
+                "</style>"
+            )
+            # В srcdoc-iframe браузер не добавляет "px" к числовым значениям
+            # style.left/top автоматически, поэтому TSD() — функция прокрутки
+            # дерева — молча игнорируется и дерево остаётся вне зоны видимости.
+            # Патчим TSD чтобы явно добавлять "px", затем перерисовываем.
+            js_fix = (
                 "<script>"
                 "(function(){"
-                "function fixAndDraw(){"
-                "document.documentElement.style.height='100%';"
-                "document.body.style.height='100%';"
+                "function patchAndDraw(){"
+                "if(typeof TSD==='function'){"
+                "TSD=function(x,y){"
+                "var e=document.getElementById('treebg');"
+                "if(e){e.style.left=(-x)+'px';e.style.top=(-y)+'px';}"
+                "};"
+                "}"
                 "if(typeof EPR==='function'){EPR();}"
                 "}"
-                "var iv=setInterval(function(){"
-                "if(window.innerWidth>0){clearInterval(iv);fixAndDraw();}"
-                "},100);"
-                "setTimeout(function(){clearInterval(iv);},60000);"
+                "[50,300,700,1500].forEach(function(t){setTimeout(patchAndDraw,t);});"
+                "window.addEventListener('resize',patchAndDraw);"
                 "})();"
                 "</script>"
             )
-            components.html(html_src + resize_script, height=1000, scrolling=True)
+            html_src = html_src.replace("</HEAD>", css_fix + "</HEAD>", 1)
+            html_src = html_src.replace("</BODY>", js_fix + "</BODY>", 1)
+            components.html(html_src, height=1000, scrolling=True)
         else:
             st.error(f"Файл не найден: {_FE_HTML}")
 
