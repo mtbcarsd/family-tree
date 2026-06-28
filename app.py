@@ -18,7 +18,7 @@ import streamlit.components.v1 as components
 
 from db.family_graph import FamilyGraph, Person
 
-_FE_HTML = Path(__file__).parent / "data_created_from_famecho" / "Family-Echo-28-Jun-2026-104542749.html"
+_FE_HTML = Path(__file__).parent / "data_created_from_famecho" / "Family-Echo-28-Jun-2026-162158508.html"
 
 # ── Конфигурация ──────────────────────────────────────────────────────────────
 

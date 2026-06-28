@@ -628,14 +628,14 @@
 1 SEX M
 1 DEAT Y
 2 DATE 1977
-1 FAMS @F41@
+1 FAMS @F47@
 1 FAMC @F9@
 0 @I80@ INDI
 1 NAME Нина /Дымкова/
 2 GIVN Нина
 2 SURN Дымкова
 1 SEX F
-1 FAMS @F42@
+1 FAMS @F48@
 1 FAMC @F9@
 0 @I81@ INDI
 1 NAME Надежда /Дымков/
@@ -865,6 +865,8 @@
 2 SURN Лучшев
 2 _MARNM Лучшев
 1 SEX M
+1 BIRT
+2 DATE 2006
 1 FAMC @F31@
 0 @I106@ INDI
 1 NAME Арсений /Лучшев/
@@ -872,6 +874,8 @@
 2 SURN Лучшев
 2 _MARNM Лучшев
 1 SEX M
+1 BIRT
+2 DATE 2010
 1 FAMC @F31@
 0 @I107@ INDI
 1 NAME Иван /Лучшев/
@@ -879,6 +883,8 @@
 2 SURN Лучшев
 2 _MARNM Лучшев
 1 SEX M
+1 BIRT
+2 DATE 2008
 1 FAMC @F31@
 0 @I108@ INDI
 1 NAME Ирина /Тищенко/
@@ -952,6 +958,8 @@
 2 SURN Ромашко
 2 _MARNM Ромашко
 1 SEX M
+1 BIRT
+2 DATE 26 SEP 1957
 1 FAMS @F35@
 1 FAMC @F36@
 0 @I116@ INDI
@@ -960,73 +968,107 @@
 2 SURN Корховая
 2 _MARNM Ромашко
 1 SEX F
+1 BIRT
+2 DATE 12 NOV 1958
 1 FAMS @F35@
+1 FAMC @F37@
 0 @I117@ INDI
 1 NAME Ольга /Ромашко/
 2 GIVN Ольга
 2 SURN Ромашко
 2 _MARNM Ромашко
 1 SEX F
+1 BIRT
+2 DATE 22 JUL 1982
 1 FAMC @F35@
 0 @I118@ INDI
-1 NAME /Ромашко/
+1 NAME Александр /Ромашко/
+2 GIVN Александр
 2 SURN Ромашко
 2 _MARNM Ромашко
 1 SEX M
-1 FAMS @F36@
-0 @I119@ INDI
-1 NAME Надежда /Ромашко/
-2 GIVN Надежда
-2 SURN Ромашко
-2 _MARNM Ромашко
-1 SEX F
 1 DEAT Y
 1 FAMS @F36@
+0 @I119@ INDI
+1 NAME Надежда /Резанович/
+2 GIVN Надежда
+2 SURN Резанович
+2 _MARNM Ромашко
+1 SEX F
+1 BIRT
+2 DATE 4 APR 1935
+1 DEAT Y
+2 DATE 3 JUN 2009
+1 FAMS @F36@
+1 FAMC @F38@
 0 @I120@ INDI
 1 NAME Лариса /Ромашко/
 2 GIVN Лариса
 2 SURN Ромашко
-2 _MARNM Бас
+2 _MARNM Ромашко
 1 SEX F
-1 FAMS @F37@
+1 BIRT
+2 DATE 13 APR 1966
+1 FAMS @F40@
 1 FAMC @F36@
 0 @I121@ INDI
 1 NAME Екатерина /Бас/
 2 GIVN Екатерина
 2 SURN Бас
-2 _MARNM Бас
+2 _MARNM Галка
 1 SEX F
-1 FAMC @F37@
+1 BIRT
+2 DATE 14 MAY 1990
+1 FAMS @F39@
+1 FAMC @F40@
 0 @I122@ INDI
 1 NAME Надежда /Бас/
 2 GIVN Надежда
 2 SURN Бас
 2 _MARNM Бас
 1 SEX F
-1 FAMC @F37@
+1 BIRT
+2 DATE 24 APR 1989
+1 FAMC @F40@
 0 @I123@ INDI
 1 NAME Мария /Ромашко/
 2 GIVN Мария
 2 SURN Ромашко
+2 _MARNM Мельник
 1 SEX F
-1 FAMS @F38@
+1 BIRT
+2 DATE 13 JUN 1959
+1 FAMS @F41@
+1 FAMS @F43@
 1 FAMC @F36@
 0 @I124@ INDI
-1 NAME Павел
+1 NAME Павел /Мельник/
 2 GIVN Павел
+2 SURN Мельник
+2 _MARNM Мельник
 1 SEX M
-1 FAMC @F38@
+1 BIRT
+2 DATE 23 AUG 1987
+1 FAMS @F42@
+1 FAMC @F43@
 0 @I125@ INDI
-1 NAME Игорь
+1 NAME Игорь /Мельник/
 2 GIVN Игорь
+2 SURN Мельник
+2 _MARNM Мельник
 1 SEX M
-1 FAMC @F38@
+1 BIRT
+2 DATE 16 JUN 1983
+1 FAMS @F44@
+1 FAMC @F43@
 0 @I126@ INDI
 1 NAME Ксения /Шилкина/
 2 GIVN Ксения
 2 SURN Шилкина
 2 _MARNM Дымкова
 1 SEX F
+1 BIRT
+2 DATE 30 APR 1986
 1 FAMS @F34@
 0 @I127@ INDI
 1 NAME Алексей /Трушкевич/
@@ -1049,6 +1091,7 @@
 2 GIVN Сергей
 2 SURN Трушкевич
 2 _MARNM Трушкевич
+1 SEX M
 1 BIRT
 2 DATE 2009
 1 FAMC @F32@
@@ -1067,6 +1110,8 @@
 2 SURN Дымкова
 2 _MARNM Дымкова
 1 SEX F
+1 BIRT
+2 DATE 16 NOV 2014
 1 FAMC @F34@
 0 @I132@ INDI
 1 NAME Лилия /Дымкова/
@@ -1074,6 +1119,8 @@
 2 SURN Дымкова
 2 _MARNM Дымкова
 1 SEX F
+1 BIRT
+2 DATE 26 OCT 2019
 1 FAMC @F34@
 0 @I133@ INDI
 1 NAME Нина /Дымкова/
@@ -1108,44 +1155,44 @@
 2 SURN Дымкова
 2 _MARNM Минина
 1 SEX F
-1 FAMS @F39@
+1 FAMS @F45@
 1 FAMC @F20@
 0 @I138@ INDI
 1 NAME Елена /Дымкова/
 2 GIVN Елена
 2 SURN Дымкова
 1 SEX F
-1 FAMS @F40@
+1 FAMS @F46@
 1 FAMC @F20@
 0 @I139@ INDI
 1 NAME /Минин/
 2 SURN Минин
 2 _MARNM Минин
 1 SEX M
-1 FAMS @F39@
+1 FAMS @F45@
 0 @I140@ INDI
 1 NAME Ирина /Минина/
 2 GIVN Ирина
 2 SURN Минина
 1 SEX F
-1 FAMC @F39@
+1 FAMC @F45@
 0 @I141@ INDI
 1 NAME Даша
 2 GIVN Даша
 1 SEX F
-1 FAMC @F40@
+1 FAMC @F46@
 0 @I142@ INDI
 1 NAME Сергей /Дымков/
 2 GIVN Сергей
 2 SURN Дымков
 2 _MARNM Дымков
 1 SEX M
-1 FAMC @F41@
+1 FAMC @F47@
 0 @I143@ INDI
 1 NAME Екатерина
 2 GIVN Екатерина
 1 SEX F
-1 FAMC @F42@
+1 FAMC @F48@
 0 @I144@ INDI
 1 NAME Александр /Гебгардт/
 2 GIVN Александр
@@ -1186,6 +1233,172 @@
 2 SURN Дымкова
 1 SEX F
 1 FAMC @F24@
+0 @I150@ INDI
+1 NAME Константин /Мельник/
+2 GIVN Константин
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX M
+1 BIRT
+2 DATE 14 JUN 1959
+1 FAMS @F41@
+0 @I151@ INDI
+1 NAME Вероника /Мельник/
+2 GIVN Вероника
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX F
+1 FAMS @F44@
+0 @I152@ INDI
+1 NAME Людимла /Шило/
+2 GIVN Людимла
+2 SURN Шило
+2 _MARNM Мельник
+1 SEX F
+1 FAMS @F42@
+0 @I153@ INDI
+1 NAME Михаил /Мельник/
+2 GIVN Михаил
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX M
+1 BIRT
+2 DATE 27 NOV 2006
+1 FAMC @F44@
+0 @I154@ INDI
+1 NAME Дарья /Мельник/
+2 GIVN Дарья
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX F
+1 BIRT
+2 DATE 19 JUL 2009
+1 FAMC @F44@
+0 @I155@ INDI
+1 NAME Иван /Мельник/
+2 GIVN Иван
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX M
+1 BIRT
+2 DATE 21 JAN 2011
+1 FAMC @F42@
+0 @I156@ INDI
+1 NAME Назар /Мельник/
+2 GIVN Назар
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX M
+1 BIRT
+2 DATE 21 JUL 2017
+1 FAMC @F42@
+0 @I157@ INDI
+1 NAME Аглая /Мельник/
+2 GIVN Аглая
+2 SURN Мельник
+2 _MARNM Мельник
+1 SEX F
+1 BIRT
+2 DATE 20 OCT 2021
+1 FAMC @F42@
+0 @I158@ INDI
+1 NAME Олег /Галка/
+2 GIVN Олег
+2 SURN Галка
+2 _MARNM Галка
+1 SEX M
+1 BIRT
+2 DATE 25 JAN 1985
+1 FAMS @F39@
+0 @I159@ INDI
+1 NAME Илья /Галка/
+2 GIVN Илья
+2 SURN Галка
+2 _MARNM Галка
+1 SEX M
+1 BIRT
+2 DATE 22 JUL 2010
+1 FAMC @F39@
+0 @I160@ INDI
+1 NAME Макар /Галка/
+2 GIVN Макар
+2 SURN Галка
+2 _MARNM Галка
+1 SEX M
+1 BIRT
+2 DATE 14 JAN 2015
+1 FAMC @F39@
+0 @I161@ INDI
+1 NAME Виктор
+2 GIVN Виктор
+1 SEX M
+1 DEAT Y
+1 FAMS @F37@
+0 @I162@ INDI
+1 NAME Любовь /Корховая/
+2 GIVN Любовь
+2 SURN Корховая
+2 _MARNM Корховая
+1 SEX F
+1 BIRT
+2 DATE 25 DEC 1941
+1 FAMS @F37@
+0 @I163@ INDI
+1 NAME Александр /Мацегора/
+2 GIVN Александр
+2 SURN Мацегора
+2 _MARNM Мацегора
+1 SEX M
+1 DEAT Y
+1 FAMC @F37@
+0 @I164@ INDI
+1 NAME Василий /Резанович/
+2 GIVN Василий
+2 SURN Резанович
+2 _MARNM Резанович
+1 SEX M
+1 DEAT Y
+1 FAMS @F38@
+1 FAMC @F49@
+0 @I165@ INDI
+1 NAME Мария /Резанович/
+2 GIVN Мария
+2 SURN Резанович
+2 _MARNM Резанович
+1 SEX F
+1 DEAT Y
+1 FAMS @F38@
+0 @I166@ INDI
+1 NAME Григорий /Резанович/
+2 GIVN Григорий
+2 SURN Резанович
+2 _MARNM Резанович
+1 SEX M
+1 DEAT Y
+1 FAMC @F38@
+0 @I167@ INDI
+1 NAME Ольга /Резанович/
+2 GIVN Ольга
+2 SURN Резанович
+2 _MARNM Шоломицкая
+1 SEX F
+1 DEAT Y
+1 FAMC @F38@
+0 @I168@ INDI
+1 NAME /Резанович/
+2 NICK американец
+2 SURN Резанович
+2 _MARNM Резанович
+1 SEX M
+1 DEAT Y
+1 FAMS @F49@
+0 @I169@ INDI
+1 NAME /Резанович/
+2 SURN Резанович
+2 _MARNM Резанович
+1 SEX F
+1 DEAT Y
+1 FAMS @F49@
 0 @F1@ FAM
 1 HUSB @I1@
 1 WIFE @I2@
@@ -1293,21 +1506,21 @@
 1 CHIL @I74@
 1 CHIL @I75@
 1 CHIL @I76@
-0 @F37@ FAM
+0 @F40@ FAM
 1 WIFE @I120@
 1 CHIL @I121@
 1 CHIL @I122@
-0 @F38@ FAM
+0 @F43@ FAM
 1 WIFE @I123@
 1 CHIL @I124@
 1 CHIL @I125@
-0 @F40@ FAM
+0 @F46@ FAM
 1 WIFE @I138@
 1 CHIL @I141@
-0 @F41@ FAM
+0 @F47@ FAM
 1 HUSB @I79@
 1 CHIL @I142@
-0 @F42@ FAM
+0 @F48@ FAM
 1 WIFE @I80@
 1 CHIL @I143@
 0 @F9@ FAM
@@ -1465,6 +1678,9 @@
 1 CHIL @I130@
 1 CHIL @I131@
 1 CHIL @I132@
+1 MARR
+2 DATE 25 APR 2009
+2 PLAC город Минск
 1 _CURRENT Y
 1 _PRIMARY Y
 0 @F35@ FAM
@@ -1481,12 +1697,73 @@
 1 CHIL @I115@
 1 CHIL @I120@
 1 CHIL @I123@
+1 MARR
+1 DIV
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F37@ FAM
+1 HUSB @I161@
+1 WIFE @I162@
+1 CHIL @I116@
+1 CHIL @I163@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F38@ FAM
+1 HUSB @I164@
+1 WIFE @I165@
+1 CHIL @I119@
+1 CHIL @I166@
+1 CHIL @I167@
+1 MARR
 1 _CURRENT Y
 1 _PRIMARY Y
 0 @F39@ FAM
+1 HUSB @I158@
+1 WIFE @I121@
+1 CHIL @I159@
+1 CHIL @I160@
+1 MARR
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F41@ FAM
+1 HUSB @I150@
+1 WIFE @I123@
+1 MARR
+2 DATE 1 MAY 1982
+2 PLAC город Столин
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F42@ FAM
+1 HUSB @I124@
+1 WIFE @I152@
+1 CHIL @I155@
+1 CHIL @I156@
+1 CHIL @I157@
+1 MARR
+2 PLAC город Столин
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F44@ FAM
+1 HUSB @I125@
+1 WIFE @I151@
+1 CHIL @I153@
+1 CHIL @I154@
+1 MARR
+2 DATE 2006
+2 PLAC город Столин
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F45@ FAM
 1 HUSB @I139@
 1 WIFE @I137@
 1 CHIL @I140@
+1 MARR
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F49@ FAM
+1 HUSB @I168@
+1 WIFE @I169@
+1 CHIL @I164@
 1 MARR
 1 _CURRENT Y
 1 _PRIMARY Y

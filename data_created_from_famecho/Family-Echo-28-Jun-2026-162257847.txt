@@ -110,9 +110,9 @@ iY8DSC	^YV2VI	mJVHOA	fE94E0	qШуст	pЛидия	gf	z1
 iYJCV0	^UE85B	mUE85B	fMZI7A	lАндрушкевич	qАндрушкевич	pДмитрий	gm
 iSMCLR	^MZI7A	mUE85B	fMZI7A	lЛучшева	qАндрушкевич	pСветлана	gf	sRHWVY
 iRHWVY	^SMCLR	sSMCLR	lЛучшев	pАндрей	qЛучшев	gm
-iXOKKI	^SMCLR	mSMCLR	lЛучшев	qЛучшев	pМихаил	gm	fRHWVY
-iBIFRY	^SMCLR	mSMCLR	fRHWVY	lЛучшев	qЛучшев	pАрсений	gm
-iF31OC	^SMCLR	mSMCLR	fRHWVY	lЛучшев	qЛучшев	pИван	gm
+iXOKKI	^SMCLR	mSMCLR	lЛучшев	qЛучшев	pМихаил	gm	fRHWVY	b20060000
+iBIFRY	^SMCLR	mSMCLR	fRHWVY	lЛучшев	qЛучшев	pАрсений	gm	b20100000
+iF31OC	^SMCLR	mSMCLR	fRHWVY	lЛучшев	qЛучшев	pИван	gm	b20080000
 iZL3GM	^A12HO	mA12HO	fXOXL6	pИрина	gf	qТищенко	lТрушкевич	b19861014	sV3H1S
 iNQ3PZ	^A12HO	mA12HO	fXOXL6	pНаталья	gf	qТищенко	b19950926
 iU222M	^UOWE5	mHBO9C	fUOWE5	lДымков	qДымков	pСергей	gm	b19780507	sPLWJD
@@ -120,24 +120,24 @@ iTS35G	^UOWE5	mHBO9C	fUOWE5	lДымков	qДымков	pВиталий	gm	b1979
 iPLWJD	^U222M	sU222M	lДымкова	pИрина	qРомашко	gf	b19800607	mRI1B8	fOEIQS
 iDNIO7	^U222M	mPLWJD	fU222M	lДымков	qДымков	pАлексей	gm	b20060331
 iPX9PI	^U222M	mPLWJD	fU222M	lДымков	qДымков	pЕвгений	gm	b20130604
-iOEIQS	^PLWJD	gm	lРомашко	sRI1B8	pСергей	qРомашко	mMR48N	fO00GR
-iRI1B8	^PLWJD	gf	sOEIQS	lРомашко	pВалентина	qКорховая
-iDOH1X	^PLWJD	mRI1B8	fOEIQS	lРомашко	qРомашко	pОльга	gf
-iO00GR	^OEIQS	gm	lРомашко	sMR48N
-iMR48N	^OEIQS	gf	sO00GR	lРомашко	pНадежда	z1
-iXIO0E	^OEIQS	mMR48N	fO00GR	lБас	qРомашко	pЛариса	gf
-iONUWW	^XIO0E	mXIO0E	lБас	qБас	pЕкатерина	gf
-iDSS9E	^XIO0E	mXIO0E	lБас	qБас	pНадежда	gf
-iQI4RI	^OEIQS	mMR48N	fO00GR	qРомашко	pМария	gf
-iM9YPU	^QI4RI	mQI4RI	pПавел	gm
-iTHCVL	^QI4RI	mQI4RI	gm	pИгорь
-iHIVH5	^TS35G	sTS35G	lДымкова	qШилкина	pКсения	gf
+iOEIQS	^PLWJD	gm	lРомашко	sRI1B8	pСергей	qРомашко	mMR48N	fO00GR	b19570926
+iRI1B8	^PLWJD	gf	sOEIQS	lРомашко	pВалентина	qКорховая	b19581112	mDVK0T	fQI03K
+iDOH1X	^PLWJD	mRI1B8	fOEIQS	lРомашко	qРомашко	pОльга	gf	b19820722
+iO00GR	^OEIQS	gm	lРомашко	sMR48N	qРомашко	pАлександр	z1	d00000600
+iMR48N	^OEIQS	gf	sO00GR	lРомашко	pНадежда	z1	qРезанович	b19350404	d20090603	mW09KN	fIGVQ0
+iXIO0E	^OEIQS	mMR48N	fO00GR	lРомашко	qРомашко	pЛариса	gf	b19660413
+iONUWW	^XIO0E	mXIO0E	lГалка	qБас	pЕкатерина	gf	b19900514	sB94BZ
+iDSS9E	^XIO0E	mXIO0E	lБас	qБас	pНадежда	gf	b19890424
+iQI4RI	^OEIQS	mMR48N	fO00GR	qРомашко	pМария	gf	lМельник	b19590613	sYY332
+iM9YPU	^QI4RI	mQI4RI	pПавел	gm	lМельник	qМельник	b19870823	sYG4XC
+iTHCVL	^QI4RI	mQI4RI	gm	pИгорь	lМельник	qМельник	b19830616	sTS0MG
+iHIVH5	^TS35G	sTS35G	lДымкова	qШилкина	pКсения	gf	b19860430
 iV3H1S	^ZL3GM	sZL3GM	lТрушкевич	qТрушкевич	pАлексей	gm
 iLSUZK	^ZL3GM	mZL3GM	fV3H1S	lТрушкевич	qТрушкевич	pАлександра	gf	b20071230
-iA2Z2C	^ZL3GM	mZL3GM	fV3H1S	lТрушкевич	qТрушкевич	pСергей	b20090000
+iA2Z2C	^ZL3GM	mZL3GM	fV3H1S	lТрушкевич	qТрушкевич	pСергей	b20090000	gm
 iMLL9H	^HIVH5	mHIVH5	fTS35G	lДымкова	qДымкова	pСофия	gf	b20100216
-iY149T	^TS35G	mHIVH5	fTS35G	lДымкова	qДымкова	pАнастасия	gf
-iD0R7C	^TS35G	mHIVH5	fTS35G	lДымкова	qДымкова	pЛилия	gf
+iY149T	^TS35G	mHIVH5	fTS35G	lДымкова	qДымкова	pАнастасия	gf	b20141116
+iD0R7C	^TS35G	mHIVH5	fTS35G	lДымкова	qДымкова	pЛилия	gf	b20191026
 iQ47W4	^SAGKD	sSAGKD	lДымкова	pНина	gf
 iB4YUW	^SAGKD	mQ47W4	fSAGKD	qДымкова	pГалина	gf
 iQ1F6E	^SAGKD	mQ47W4	fSAGKD	lДымков	qДымков	pАлександр	gm
@@ -155,6 +155,26 @@ iL1XGO	^BRQLT	sBRQLT	pНиколай	gm	z1
 iG4C7A	^WRGAY	sWRGAY	lДымкова	pГалина	gf
 iUMBJX	^WRGAY	mG4C7A	fWRGAY	lДымков	qДымков	pСергей	gm
 iWNQW0	^WRGAY	mG4C7A	fWRGAY	qДымкова	pИрина	gf
+iYY332	^QI4RI	sQI4RI	lМельник	pКонстантин	qМельник	gm	b19590614
+iTS0MG	^THCVL	sTHCVL	lМельник	pВероника	gf	b00000725
+iYG4XC	^M9YPU	sM9YPU	lМельник	pЛюдимла	qШило	gf	b00000301
+iW4DNA	^THCVL	mTS0MG	fTHCVL	lМельник	qМельник	pМихаил	gm	b20061127
+iNY11E	^THCVL	mTS0MG	fTHCVL	lМельник	qМельник	pДарья	gf	b20090719
+iE5VN4	^M9YPU	mYG4XC	fM9YPU	lМельник	qМельник	pИван	gm	b20110121
+iJC11I	^M9YPU	mYG4XC	fM9YPU	lМельник	qМельник	pНазар	gm	b20170721
+iFT7ST	^M9YPU	mYG4XC	fM9YPU	lМельник	qМельник	pАглая	gf	b20211020
+iB94BZ	^ONUWW	sONUWW	lГалка	pОлег	qГалка	gm	b19850125
+iFU903	^ONUWW	mONUWW	fB94BZ	lГалка	qГалка	pИлья	gm	b20100722
+iYXW53	^B94BZ	mONUWW	fB94BZ	lГалка	qГалка	pМакар	gm	b20150114
+iQI03K	^RI1B8	gm	sDVK0T	z1	pВиктор
+iDVK0T	^RI1B8	gf	sQI03K	lКорховая	pЛюбовь	b19411225
+iGK3BC	^RI1B8	mDVK0T	fQI03K	lМацегора	qМацегора	pАлександр	gm	z1
+iIGVQ0	^MR48N	gm	lРезанович	sW09KN	pВасилий	qРезанович	z1	mTXQCE	fMP851
+iW09KN	^MR48N	gf	sIGVQ0	lРезанович	pМария	z1
+iPMLEJ	^MR48N	mW09KN	fIGVQ0	qРезанович	pГригорий	lРезанович	gm	z1
+iPXZ49	^MR48N	mW09KN	fIGVQ0	lШоломицкая	qРезанович	pОльга	gf	z1
+iMP851	^IGVQ0	gm	lРезанович	sTXQCE	Nамериканец	qРезанович	z1
+iTXQCE	^IGVQ0	gf	sMP851	lРезанович	z1
 pCWLHI START	gm	wдеревня Каменные Лавы
 pB27RX DLJ2J	gm
 pOH2PB P77LY	gm	wдеревня Каменные Лавы
@@ -168,6 +188,14 @@ pD6DNC Y55A0	gm
 pE94E0 JVHOA	gm
 pPLWJD U222M	gm	m20050603	wгород Минск
 pOEIQS RI1B8	gm
+pMR48N O00GR	gd
+pQI4RI YY332	gm	m19820501	wгород Столин
+pM9YPU YG4XC	gm	wгород Столин
+pTHCVL TS0MG	gm	wгород Столин	m20060000
+pHIVH5 TS35G	gm	m20090425	wгород Минск
 pQ47W4 SAGKD	gm
 pFANUD PSZ56	gm
 pNPG1T T2JRT	gm
+pB94BZ ONUWW	gm
+pIGVQ0 W09KN	gm
+pMP851 TXQCE	gm
