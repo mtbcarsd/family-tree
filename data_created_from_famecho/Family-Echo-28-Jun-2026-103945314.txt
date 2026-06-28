@@ -1,0 +1,173 @@
+# Моя семья
+#
+# FamilyScript downloaded by Sergei on 28 Jun 2026.
+#
+# This file should be viewed as Unicode (UTF-8) character encoding.
+#
+# Created by Family Echo - https://www.familyecho.com/
+#
+iSTART	gm	b18000101	z1	sCWLHI	lДымков	qТимофеев	pТимофеев
+iCWLHI	^START	sSTART	z1	gf	lТимофеева
+iB27RX	^START	mCWLHI	fSTART	lДымков	qДымков	pТерентий	gm	vдеревня Каменные Лавы	sDLJ2J	z1
+iDLJ2J	^B27RX	sB27RX	lДымкова	gf	z1
+iJQWZ7	^START	mCWLHI	fSTART	lДымков	qДымков	pПрокофий	gm	z1	NАрхирей
+iRXVIL	^START	mCWLHI	fSTART	lДымков	qДымков	pНиколай	z1	gm
+iYIUKS	^START	mCWLHI	fSTART	lДымков	qДымков	pВасиль	gm	z1
+iDFN8D	^RXVIL	fRXVIL	pДомна	z1	gf	qДымкова
+iFOXPB	^RXVIL	fRXVIL	qДымкова	gf	z1	pАгафиья
+iP245K	^RXVIL	fRXVIL	qДымкова	pМаруся	gf	z1	NМатуся
+iA8HKB	^RXVIL	fRXVIL	qДымкова	pГанна	z1	aДеревня Добрейка	gf
+iGD87B	^P245K	mP245K	pШура	gf	z1
+iN79PQ	^P245K	mP245K	z1	gm	pПетр
+iSTCEB	^P245K	mP245K	pВладимир	z1	gm
+iLP3YK	^FOXPB	mFOXPB	z1	pТатьяна	gf
+iMNOO2	^FOXPB	mFOXPB	pГалина	z1	gf
+iDLRH8	^FOXPB	mFOXPB	pБорис	gm	z1
+iXQRWZ	^JQWZ7	fJQWZ7	qДымкова	gf	pПекла	z1
+iVNZ1G	^JQWZ7	fJQWZ7	qДымкова	pМарфа	gf	z1
+iWBGR2	^VNZ1G	mVNZ1G	pЕкатерина	gf	z1
+iNYH45	^VNZ1G	mVNZ1G	pВера	gf	z1
+iHRZQP	^VNZ1G	mVNZ1G	pЗина	z1	gf
+iQQWPK	^VNZ1G	mVNZ1G	pПетр	z1	gm
+iF7QZP	^VNZ1G	mVNZ1G	pАексей	gm	z1
+iFS0OO	^VNZ1G	mVNZ1G	pАнатолий	gm	z1
+iBMQLI	^XQRWZ	mXQRWZ	gm	pМаксим	z1
+iR93E0	^XQRWZ	mXQRWZ	pНаста	gf	z1
+iYFAOC	^XQRWZ	mXQRWZ	pАнюта	gf	z1
+iWVG6M	^XQRWZ	mXQRWZ	gm	z1	pКоля
+iOH2PB	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pПахом	gm	z1	b19020000	d19880000	sP77LY
+iP77LY	^OH2PB	sOH2PB	lДымкова	qЦаранкова	pЕкатерина	gf	z1	b19131205	d19891205	NАфанасьевна	mX0I7P	fQJKBV
+iU98P6	^B27RX	mDLJ2J	fB27RX	lДымкова	qДымкова	pЕлена	gf	z1
+iH6FZ0	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pИван	gm	z1
+iCZA6B	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pАлександр	gm	z1
+iVT1BP	^B27RX	mDLJ2J	fB27RX	lСтижанова	qДымков	pАксинья	gf	z1	sJPG9A
+iJPG9A	^VT1BP	sVT1BP	lСтижанов	gm	z1	qСтижанов
+iHQYWA	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pМалах	gm	z1
+iMV9S9	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pНиколай	gm	z1	NДоля
+iO0K5K	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pВладимир	gm	z1
+iJO5NU	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pМатруна	gf	z1
+iJUYT2	^B27RX	mDLJ2J	fB27RX	lДымков	qДымков	pНикита	gm	z1
+iPQ4OY	^JUYT2	fJUYT2	lДымков	qДымков	pАлександр	gm	z1
+iI8ON1	^JUYT2	fJUYT2	qДымкова	pМария	gf	z1
+iHXJET	^JUYT2	fJUYT2	lДымков	qДымков	gm	z1	pМихаил
+iMCC36	^JUYT2	fJUYT2	lДымков	qДымков	pМикола	z1	gm
+iHXFU5	^JUYT2	fJUYT2	lДымков	qДымков	pАлексей	gm	z1
+iHTKNQ	^JUYT2	fJUYT2	qДымкова	pВера	gf	z1
+iJGBKW	^JO5NU	mJO5NU	qДымкова	z1	gf	pКлава
+iW023T	^JO5NU	mJO5NU	lДымков	qДымков	pФедя	gm	z1
+iIBGF0	^JO5NU	mJO5NU	lДымков	qДымков	pСергей	z1	gm
+iJYGV2	^O0K5K	fO0K5K	qДымкова	gf	z1	pНаста
+iC6T2X	^O0K5K	fO0K5K	qДымкова	z1	pТатьяна	gf
+iCBHBW	^O0K5K	fO0K5K	lДымков	qДымков	pВитя	gm	z1
+iXST3J	^O0K5K	fO0K5K	qДымкова	pЗина	gf	z1
+iNO8Y2	^MV9S9	fMV9S9	qДымкова	pНаста	gf	z1
+iP7RXT	^MV9S9	fMV9S9	lДымков	qДымков	pСтепан	gm	z1
+iLWJO3	^MV9S9	fMV9S9	lДымков	qДымков	pФедор	gm	z1
+iOIR74	^MV9S9	fMV9S9	lДымков	qДымков	pАлексей	gm	z1
+iPO9I7	^MV9S9	fMV9S9	lДымков	qДымков	pВасиль	z1	gm
+iNP77Y	^MV9S9	fMV9S9	qДымкова	pИра	gf	z1	nвозможно другое
+iA0SF5	^HQYWA	fHQYWA	lДымков	qДымков	pМарк	gm	z1
+iQN4GN	^HQYWA	fHQYWA	qДымкова	pМария	z1	gf
+iTKDBE	^HQYWA	fHQYWA	lДымков	qДымков	pАлеша	gm	z1
+iVD77Q	^HQYWA	fHQYWA	lДымков	qДымков	pЯков	z1	gm
+iYBPB6	^HQYWA	fHQYWA	lДымков	qДымков	pМотя	gm	z1
+iBH1JI	^HQYWA	fHQYWA	lДымков	qДымков	pСергей	gm	z1
+iJFMUA	^HQYWA	fHQYWA	lДымков	qДымков	pЛеонид	gm	z1
+iTDUUD	^VT1BP	mVT1BP	fJPG9A	lСтижанов	qСтижанов	pПетр	z1	gm
+iX0ACO	^VT1BP	mVT1BP	fJPG9A	lСтижанов	qСтижанов	pИван	z1	gm
+iEH9AI	^VT1BP	mVT1BP	fJPG9A	lСтижанов	qСтижанов	gm	z1	pАлексей
+iTY96X	^H6FZ0	fH6FZ0	qДымкова	pЛидия	gf	z1
+iIGA7B	^H6FZ0	fH6FZ0	lДымков	qДымков	pНиколай	z1	gm
+iHTHKG	^H6FZ0	fH6FZ0	lДымков	qДымков	pВасиль	gm	z1
+iQZV6B	^U98P6	mU98P6	qДымкова	pШура	gf	z1
+iGJXSN	^U98P6	mU98P6	qДымкова	gf	pВера	z1
+iORGAA	^U98P6	mU98P6	lДымкова	qДымкова	pНина	gf	z1
+iSAGKD	^OH2PB	mP77LY	fOH2PB	lДымков	qДымков	pВладимир	gm	z1	sQ47W4
+iPSZ56	^OH2PB	mP77LY	fOH2PB	lДымков	qДымков	gm	pНиколай	z1	sFANUD
+iD0FCL	^OH2PB	mP77LY	fOH2PB	lДымков	qДымков	pСергей	z1	gm	d19770000
+iWX4KJ	^OH2PB	mP77LY	fOH2PB	qДымкова	gf	pНина
+iBRQLT	^OH2PB	mP77LY	fOH2PB	lДымков	qДымков	pНадежда	gf	sL1XGO
+iUOWE5	^OH2PB	mP77LY	fOH2PB	lДымков	qДымков	pМихаил	gm	b19511016	sHBO9C
+iWRGAY	^OH2PB	mP77LY	fOH2PB	lДымков	qДымков	pАнатолий	gm	z1	sG4C7A
+iQJKBV	^P77LY	gm	lЦаранков	z1	sX0I7P	pАфанасий	d19440000	aдеревня Церковищи	qЦаранков
+iX0I7P	^P77LY	gf	sQJKBV	lЦаранкова	z1	pЕлена	d19440000	NСидоровна	aдеревня Церковищи
+iRO0NP	^P77LY	mX0I7P	fQJKBV	lЦаранков	qЦаранков	pПетр	gm	z1	d19440000	aдеревня Церковищи
+iWSRRM	^P77LY	mX0I7P	fQJKBV	qЦаранкова	pПросковья	gf	z1	d19440000	aдеревня Церковищи
+iHBO9C	^UOWE5	sUOWE5	lДымкова	pРаиса	qШуст	gf	b19551020	mS7LRT	fYV2VI
+iYV2VI	^HBO9C	gm	lШуст	sS7LRT	pВиталий	qШуст	b19290401	z1	d20090923	aдеревня Минки	mJVHOA	fE94E0	NВитя
+iS7LRT	^HBO9C	gf	sYV2VI	lШуст	pАлександра	qВитковская	b19310114	z1	d19990909	aдеревня Минки	mD6DNC	fY55A0
+iUE85B	^HBO9C	mS7LRT	fYV2VI	lАндрушкевич	qШуст	pЗоя	gf	b19510000	sMZI7A
+iMZI7A	^UE85B	sUE85B	lАндрушкевич	pНиколай	qАндрушкевич	z1	gm
+iA12HO	^HBO9C	mS7LRT	fYV2VI	lТищенко	qШуст	pАнна	gf	b19580000
+iXOXL6	^A12HO	pАндрей	lТищенко	qТищенко	gm
+iY55A0	^S7LRT	gm	lВитковский	sD6DNC	z1	qВитковский	pНиколай
+iD6DNC	^S7LRT	gf	sY55A0	lВитковская	pАнна	qСкарина	z1
+iE94E0	^YV2VI	gm	lШуст	sJVHOA	pАлексей	z1	NТарас	mK8DV5	fL0INF
+iJVHOA	^YV2VI	gf	sE94E0	lШуст	pМария	qСоболь	z1
+iL0INF	^E94E0	gm	sK8DV5	pТарас	lШуст	qШуст	z1
+iK8DV5	^E94E0	gf	sL0INF	z1
+iY8DSC	^YV2VI	mJVHOA	fE94E0	qШуст	pЛидия	gf	z1
+iYJCV0	^UE85B	mUE85B	fMZI7A	lАндрушкевич	qАндрушкевич	pДмитрий	gm
+iSMCLR	^MZI7A	mUE85B	fMZI7A	lЛучшева	qАндрушкевич	pСветлана	gf	sRHWVY
+iRHWVY	^SMCLR	sSMCLR	lЛучшев	pАндрей	qЛучшев	gm
+iXOKKI	^SMCLR	mSMCLR	lЛучшев	qЛучшев	pМихаил	gm	fRHWVY
+iBIFRY	^SMCLR	mSMCLR	fRHWVY	lЛучшев	qЛучшев	pАрсений	gm
+iF31OC	^SMCLR	mSMCLR	fRHWVY	lЛучшев	qЛучшев	pИван	gm
+iZL3GM	^A12HO	mA12HO	fXOXL6	pИрина	gf	qТищенко	lТрушкевич	b19861014	sV3H1S
+iNQ3PZ	^A12HO	mA12HO	fXOXL6	pНаталья	gf	qТищенко	b19950926
+iU222M	^UOWE5	mHBO9C	fUOWE5	lДымков	qДымков	pСергей	gm	b19780507	sPLWJD
+iTS35G	^UOWE5	mHBO9C	fUOWE5	lДымков	qДымков	pВиталий	gm	b19791220	sHIVH5
+iPLWJD	^U222M	sU222M	lДымкова	pИрина	qРомашко	gf	b19800607	mRI1B8	fOEIQS
+iDNIO7	^U222M	mPLWJD	fU222M	lДымков	qДымков	pАлексей	gm	b20060331
+iPX9PI	^U222M	mPLWJD	fU222M	lДымков	qДымков	pЕвгений	gm	b20130604
+iOEIQS	^PLWJD	gm	lРомашко	sRI1B8	pСергей	qРомашко	mMR48N	fO00GR
+iRI1B8	^PLWJD	gf	sOEIQS	lРомашко	pВалентина	qКорховая
+iDOH1X	^PLWJD	mRI1B8	fOEIQS	lРомашко	qРомашко	pОльга	gf
+iO00GR	^OEIQS	gm	lРомашко	sMR48N
+iMR48N	^OEIQS	gf	sO00GR	lРомашко	pНадежда	z1
+iXIO0E	^OEIQS	mMR48N	fO00GR	lБас	qРомашко	pЛариса	gf
+iONUWW	^XIO0E	mXIO0E	lБас	qБас	pЕкатерина	gf
+iDSS9E	^XIO0E	mXIO0E	lБас	qБас	pНадежда	gf
+iQI4RI	^OEIQS	mMR48N	fO00GR	qРомашко	pМария	gf
+iM9YPU	^QI4RI	mQI4RI	pПавел	gm
+iTHCVL	^QI4RI	mQI4RI	gm	pИгорь
+iHIVH5	^TS35G	sTS35G	lДымкова	qШилкина	pКсения	gf
+iV3H1S	^ZL3GM	sZL3GM	lТрушкевич	qТрушкевич	pАлексей	gm
+iLSUZK	^ZL3GM	mZL3GM	fV3H1S	lТрушкевич	qТрушкевич	pАлександра	gf	b20071230
+iA2Z2C	^ZL3GM	mZL3GM	fV3H1S	lТрушкевич	qТрушкевич	pСергей	b20090000
+iMLL9H	^HIVH5	mHIVH5	fTS35G	lДымкова	qДымкова	pСофия	gf	b20100216
+iY149T	^TS35G	mHIVH5	fTS35G	lДымкова	qДымкова	pАнастасия	gf
+iD0R7C	^TS35G	mHIVH5	fTS35G	lДымкова	qДымкова	pЛилия	gf
+iQ47W4	^SAGKD	sSAGKD	lДымкова	pНина	gf
+iB4YUW	^SAGKD	mQ47W4	fSAGKD	qДымкова	pГалина	gf
+iQ1F6E	^SAGKD	mQ47W4	fSAGKD	lДымков	qДымков	pАлександр	gm
+iFANUD	^PSZ56	sPSZ56	lДымкова	gf	pВалентина
+iT2JRT	^PSZ56	mFANUD	fPSZ56	qДымкова	pНаталья	gf	lМинина	sNPG1T
+iKHYD1	^PSZ56	mFANUD	fPSZ56	qДымкова	pЕлена	gf
+iNPG1T	^T2JRT	sT2JRT	lМинин	gm
+iMSH56	^T2JRT	mT2JRT	fNPG1T	qМинина	pИрина	gf
+iM2244	^KHYD1	mKHYD1	pДаша	gf
+iJIEZ8	^D0FCL	fD0FCL	lДымков	qДымков	pСергей	gm
+iOCYYI	^WX4KJ	mWX4KJ	pЕкатерина	gf
+iJUZX2	^BRQLT	lГебгардт	pАлександр	qГебгардт	gm
+iMTN69	^BRQLT	mBRQLT	fJUZX2	lДымков	qДымков	pДмитрий	gm
+iL1XGO	^BRQLT	sBRQLT	pНиколай	gm	z1
+iG4C7A	^WRGAY	sWRGAY	lДымкова	pГалина	gf
+iUMBJX	^WRGAY	mG4C7A	fWRGAY	lДымков	qДымков	pСергей	gm
+iWNQW0	^WRGAY	mG4C7A	fWRGAY	qДымкова	pИрина	gf
+pCWLHI START	gm	wдеревня Каменные Лавы
+pB27RX DLJ2J	gm
+pOH2PB P77LY	gm	wдеревня Каменные Лавы
+pJPG9A VT1BP	gm
+pBRQLT JUZX2	gd	e1
+pQJKBV X0I7P	gm
+pHBO9C UOWE5	gm	m19770610	wгород Минск
+pS7LRT YV2VI	gm
+pA12HO XOXL6	e1	gd
+pD6DNC Y55A0	gm
+pE94E0 JVHOA	gm
+pPLWJD U222M	gm	m20050603	wгород Минск
+pOEIQS RI1B8	gm
+pQ47W4 SAGKD	gm
+pFANUD PSZ56	gm
+pNPG1T T2JRT	gm

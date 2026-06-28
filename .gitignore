@@ -9,3 +9,7 @@ output/ocr_*.txt
 output/raw_ocr.txt
 output/final_sunburst.html
 output/.~lock.*
+
+# Claude internal
+.agents/
+skills-lock.json
