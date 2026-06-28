@@ -14,8 +14,11 @@ from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+import streamlit.components.v1 as components
 
 from db.family_graph import FamilyGraph, Person
+
+_FE_HTML = Path(__file__).parent / "data_created_from_famecho" / "Family-Echo-28-Jun-2026-104542749.html"
 
 # ── Конфигурация ──────────────────────────────────────────────────────────────
 
@@ -346,8 +349,8 @@ def main() -> None:
 
     st.markdown("---")
 
-    tab_sunburst, tab_table, tab_stats = st.tabs(
-        ["☀️ Sunburst", "📋 Таблица", "📊 Статистика"]
+    tab_sunburst, tab_table, tab_stats, tab_fe = st.tabs(
+        ["☀️ Sunburst", "📋 Таблица", "📊 Статистика", "🌐 FamilyEcho"]
     )
 
     with tab_sunburst:
@@ -438,6 +441,33 @@ def main() -> None:
                 use_container_width=True,
                 hide_index=True,
             )
+
+    with tab_fe:
+        if _FE_HTML.exists():
+            html_src = _FE_HTML.read_text(encoding="utf-8")
+            # Streamlit скрывает неактивные вкладки через display:none.
+            # При onload iframe-а body не имеет явной высоты, поэтому
+            # height:100% на #treebg раскрывается в 0 и дерево невидимо.
+            # Скрипт ждёт появления реальной ширины (клик по вкладке),
+            # затем задаёт height:100% для html/body и форсирует перерисовку.
+            resize_script = (
+                "<script>"
+                "(function(){"
+                "function fixAndDraw(){"
+                "document.documentElement.style.height='100%';"
+                "document.body.style.height='100%';"
+                "if(typeof EPR==='function'){EPR();}"
+                "}"
+                "var iv=setInterval(function(){"
+                "if(window.innerWidth>0){clearInterval(iv);fixAndDraw();}"
+                "},100);"
+                "setTimeout(function(){clearInterval(iv);},60000);"
+                "})();"
+                "</script>"
+            )
+            components.html(html_src + resize_script, height=1000, scrolling=True)
+        else:
+            st.error(f"Файл не найден: {_FE_HTML}")
 
 
 if __name__ == "__main__":
